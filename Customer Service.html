@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- Basic Metadata -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <title>Customer Service</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   <!-- Style CSS -->
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <!-- Responsive CSS -->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- Favicon -->
+   <link rel="icon" href="images/fevicon.png" type="image/gif" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+   <!-- Owl Carousel Stylesheets -->
+   <link rel="stylesheet" href="css/owl.carousel.min.css">
+   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   <style>
+      /* Header Section Background */
+      .header_section {
+         background-color: #333333; /* New background color */
+      }
+
+      /* Banner Text */
+      .banner_taital {
+         color: #f26522; /* New text color */
+      }
+
+      /* Button Styles */
+      .buynow_bt a {
+         background-color: #4CAF50; /* Button background color */
+         color: #ffffff; /* Text color */
+      }
+      .seemore_bt a {
+         background-color: #008CBA; /* Button background color */
+         color: #ffffff; /* Text color */
+      }
+
+      /* Footer Background and Text Colors */
+      .footer_section {
+         background-color: #282828; /* Footer background color */
+         color: #f1f1f1; /* Text color */
+      }
+      .footer_menu a {
+         color: #f26522; /* Link color */
+      }
+
+      /* Active Carousel Slide Background */
+      .carousel-item.active {
+         background-color: #f0f0f0; /* New background color */
+      }
+   </style>
+</head>
+<body>
+   <!-- Banner Background Main Start -->
+   <div class="banner_bg_main">
+      <!-- Header Top Section Start -->
+      <div class="container">
+         <div class="header_section_top">
+            <div class="row">
+               <div class="col-sm-12">
+                  <div class="custom_menu">
+                     <ul>
+                        <li><a href="index.html">Home</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Header Top Section End -->
+      <!-- Logo Section Start -->
+      <div class="logo_section">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Logo"></a></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Logo Section End -->
+   </div>
+
+   <!-- Customer Service Section Start -->
+   <div class="customer_service_section">
+      <div class="container">
+         <!-- Section Heading -->
+         <div class="row">
+            <div class="col-sm-12">
+               <h2 class="section_title">Customer Service</h2>
+               <p class="section_description">We’re here to assist you! Explore our resources below or reach out for personalized support.</p>
+            </div>
+         </div>
+         <!-- Services List -->
+         <div class="row service_list">
+            <div class="col-md-4">
+               <h3>Product Support</h3>
+               <p>Need help with a product? Our team is here to provide guidance on product features, troubleshooting, and more.</p>
+            </div>
+            <div class="col-md-4">
+               <h3>Order Assistance</h3>
+               <p>Get help with your order, from tracking and order status to payment issues. We’re here to ensure smooth transactions.</p>
+            </div>
+            <div class="col-md-4">
+               <h3>Returns & Refunds</h3>
+               <p>Need to return or exchange a product? Learn about our return policy and how we can process your refund quickly.</p>
+            </div>
+         </div>
+         <!-- FAQ Section -->
+         <div class="row faq_section">
+            <div class="col-sm-12">
+               <h3>Frequently Asked Questions</h3>
+               <ul class="faq_list">
+                  <li>
+                     <h4>How do I track my order?</h4>
+                     <p>Visit our <a href="order-tracking.html">Order Tracking</a> page and enter your order number for the latest updates.</p>
+                  </li>
+                  <li>
+                     <h4>What is your return policy?</h4>
+                     <p>We accept returns within 30 days of purchase. Please ensure the product is unused and in its original packaging.</p>
+                  </li>
+                  <li>
+                     <h4>How do I contact customer support?</h4>
+                     <p>You can reach us at <a href="mailto:fashionhub@gmail.com">fashionhub@gmail.com</a> or call us at <a href="tel:+254758755239">+254797113655</a>.</p>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <!-- Contact Form -->
+         <div class="row contact_form_section">
+            <div class="col-sm-12">
+               <h3>Contact Us</h3>
+               <form action="submit_form.php" method="POST" class="contact_form">
+                  <div class="form-group">
+                     <label for="name">Full Name:</label>
+                     <input type="text" class="form-control" id="name" name="name" required>
+                  </div>
+                  <div class="form-group">
+                     <label for="email">Email Address:</label>
+                     <input type="email" class="form-control" id="email" name="email" required>
+                  </div>
+                  <div class="form-group">
+                     <label for="message">Message:</label>
+                     <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Customer Service Section End -->
+
+   <!-- Scripts -->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

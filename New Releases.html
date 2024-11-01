@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Style Hub</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to your main CSS file -->
+
+</head>
+<body>
+
+<div class="new_releases_container">
+    <h2>New Releases</h2>
+    <div class="new_releases">
+        <!-- New product items will be inserted here by JavaScript -->
+    </div>
+</div>
+
+<script>
+    // Function to fetch new releases
+    async function fetchNewReleases() {
+        try {
+            const response = await fetch('fetch_new_releases.php'); // Ensure this points to your PHP script
+            const newReleases = await response.json();
+
+            const releasesContainer = document.querySelector('.new_releases');
+            releasesContainer.innerHTML = ''; // Clear existing releases
+
+            newReleases.forEach(release => {
+                const releaseItem = `
+                    <div class="release_item">
+                        <img src="${release.image_url}" alt="${release.product_name}">
+                        <h4>${release.product_name}</h4>
+                        <p>${release.description}</p>
+                        <p class="price">$${release.price}</p>
+                        <p class="release_date">Released on: ${release.release_date}</p>
+                        <a href="#" class="buy_now_button">Buy Now</a>
+                    </div>
+                `;
+                releasesContainer.innerHTML += releaseItem;
+            });
+        } catch (error) {
+            console.error('Error fetching new releases:', error);
+        }
+    }
+
+    // Fetch new releases on page load
+    document.addEventListener('DOMContentLoaded', fetchNewReleases);
+</script>
+
+</body>
+</html>

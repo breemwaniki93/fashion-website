@@ -1,0 +1,111 @@
+<div class="todays_deal_section">
+    <h1 class="deal_title">Today's Deals</h1>
+
+    <!-- Daily Discounts -->
+    <div class="daily_discounts">
+        <h2>Daily Discounts</h2>
+        <div class="deal_container">
+            <div class="deal_item">
+                <img src="images/deal1.png" alt="Product 1">
+                <h4>Product Name 1</h4>
+                <p><span class="original_price">$50.00</span> <span class="discounted_price">$25.00</span></p>
+                <div class="countdown">Deal ends in: <span id="countdown1">12:00:00</span></div>
+                <a href="#" class="buy_now_button">Buy Now</a>
+            </div>
+            <div class="deal_item">
+                <img src="images/deal2.png" alt="Product 2">
+                <h4>Product Name 2</h4>
+                <p><span class="original_price">$75.00</span> <span class="discounted_price">$50.00</span></p>
+                <div class="countdown">Deal ends in: <span id="countdown2">10:30:00</span></div>
+                <a href="#" class="buy_now_button">Buy Now</a>
+            </div>
+            <!-- Add more deal items as needed -->
+        </div>
+    </div>
+
+    <!-- Flash Sales -->
+    <div class="flash_sales">
+        <h2>Flash Sales</h2>
+        <div class="deal_container">
+            <div class="deal_item">
+                <img src="images/flashsale1.png" alt="Flash Sale Product">
+                <h4>Flash Sale Product</h4>
+                <p><span class="original_price">$40.00</span> <span class="discounted_price">$20.00</span></p>
+                <a href="#" class="buy_now_button">Buy Now</a>
+            </div>
+            <!-- Add more flash sale items as needed -->
+        </div>
+    </div>
+
+    <!-- Special Bundles -->
+    <div class="special_bundles">
+        <h2>Special Bundles</h2>
+        <div class="deal_container">
+            <div class="deal_item">
+                <img src="images/bundle1.png" alt="Bundle 1">
+                <h4>Bundle 1: Product A + Product B</h4>
+                <p><span class="original_price">$100.00</span> <span class="discounted_price">$75.00</span></p>
+                <a href="#" class="buy_now_button">Buy Now</a>
+            </div>
+            <!-- Add more bundle items as needed -->
+        </div>
+    </div>
+
+    <!-- Trending and Bestsellers -->
+    <div class="trending_bestsellers">
+        <h2>Trending and Bestsellers</h2>
+        <div class="deal_container">
+            <div class="deal_item">
+                <img src="images/trending1.png" alt="Trending Product">
+                <h4>Trending Product</h4>
+                <p><span class="original_price">$30.00</span> <span class="discounted_price">$25.00</span></p>
+                <a href="#" class="buy_now_button">Buy Now</a>
+            </div>
+            <!-- Add more trending items as needed -->
+        </div>
+    </div>
+</div>
+
+<style>
+    .todays_deal_section {
+        padding: 20px;
+        background-color: #f8f8f8;
+    }
+    .deal_title {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    .deal_container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .deal_item {
+        width: 30%;
+        margin: 10px;
+        padding: 15px;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        text-align: center;
+    }
+    .original_price {
+        text-decoration: line-through;
+        color: red;
+    }
+    .discounted_price {
+        font-weight: bold;
+        color: green;
+    }
+    .countdown {
+        font-size: 0.9em;
+        color: #555;
+    }
+    .buy_now_button {
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+</style>
